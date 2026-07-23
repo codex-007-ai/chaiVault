@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: white;
+    min-height: 100vh;
+    padding: 30px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #94a3b8;
+}
+
+.card {
+    background: #1e293b;
+    border-radius: 16px;
+    padding: 25px;
+    margin-bottom: 25px;
+    border: 1px solid #334155;
+}
+
+.card h2 {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 8px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background: #334155;
+    color: white;
+}
+
+input::placeholder {
+    color: #94a3b8;
+}
+
+button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    background: #2563eb;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+#encryptStatus,
+#decryptStatus {
+    margin-top: 15px;
+    color: #22c55e;
+    font-weight: bold;
+}
+
+#preview {
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 12px;
+    display: none;
+}
