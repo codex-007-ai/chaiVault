@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai Vault - Future Image Capsule</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <header>
+        <h1>🔐 CHAI VAULT</h1>
+        <p>Future Image Capsule</p>
+    </header>
+
+    <section class="card">
+        <h2>📸 Create Vault</h2>
+
+        <label>Vault Serial Number</label>
+        <input type="text" id="serial" placeholder="FV-17203501">
+
+        <label>Select Image</label>
+        <input type="file" id="imageInput" accept="image/*">
+
+        <label>Passphrase</label>
+        <input type="password" id="encryptPassword" placeholder="Enter passphrase">
+
+        <button id="encryptBtn">
+            🔒 Encrypt & Download
+        </button>
+
+        <div id="encryptStatus"></div>
+    </section>
+
+    <section class="card">
+        <h2>📦 Open Vault</h2>
+
+        <label>Select .vault File</label>
+        <input type="file" id="vaultInput" accept=".vault">
+
+        <label>Passphrase</label>
+        <input type="password" id="decryptPassword" placeholder="Enter passphrase">
+
+        <button id="decryptBtn">
+            🔓 Open Vault
+        </button>
+
+        <div id="decryptStatus"></div>
+
+        <img id="preview" alt="Recovered Image">
+    </section>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
